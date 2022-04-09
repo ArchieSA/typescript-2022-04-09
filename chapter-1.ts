@@ -127,4 +127,16 @@ film.type = MovieTypes.Film;
 film.type = 'series';
 
 // Literal Type
-let position: 'absolute' | 'fixed';
+let position: 'absolute' | 'fixed' |  {
+    type: 'film' | 'series',
+    title: string;
+    duration: number;
+    actors?: string[];
+} = {
+    title: 'Spider Man',
+    duration: 120,
+    actors: ['Valera'],
+    type: MovieTypes.Film,
+};
+
+position = 'absolute';
