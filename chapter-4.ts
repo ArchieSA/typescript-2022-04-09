@@ -129,6 +129,14 @@
 //     }
 // }
 //
+// try {
+//     // do something
+// } catch (error) {
+//     if (error instanceof Error) {
+//         console.log(error.message);
+//     }
+// }
+//
 //
 // function isFish(animal: Fish | Bird): animal is Fish {
 //     const fish = (animal as Fish);
